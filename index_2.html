@@ -1,0 +1,696 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Khubaib Amjad — Backend Software Engineer (Java, Spring Boot)</title>
+<meta name="description" content="Khubaib Amjad — backend software engineer in Lahore, Pakistan specializing in Java, Spring Boot, and REST APIs. Open to remote, hybrid, and on-site roles.">
+<meta name="author" content="Khubaib Amjad">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://khubaibamjad.github.io/">
+<meta property="og:title" content="Khubaib Amjad — Backend Software Engineer (Java, Spring Boot)">
+<meta property="og:description" content="Khubaib Amjad — backend software engineer in Lahore, Pakistan specializing in Java, Spring Boot, and REST APIs. Open to remote, hybrid, and on-site roles.">
+<meta property="og:image" content="https://khubaibamjad.github.io/og-preview.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Khubaib Amjad — Backend Software Engineer (Java, Spring Boot)">
+<meta name="twitter:description" content="Khubaib Amjad — backend software engineer in Lahore, Pakistan specializing in Java, Spring Boot, and REST APIs. Open to remote, hybrid, and on-site roles.">
+<meta name="twitter:image" content="https://khubaibamjad.github.io/og-preview.png">
+
+<link rel="canonical" href="https://khubaibamjad.github.io/">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" id="themeColorMeta" content="#FFFFFF">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22%231F3A5F%22/%3E%3Ctext%20x%3D%2232%22%20y%3D%2241%22%20font-family%3D%22IBM%20Plex%20Mono%2C%20monospace%22%20font-size%3D%2224%22%20font-weight%3D%22700%22%20fill%3D%22%23FFFFFF%22%20text-anchor%3D%22middle%22%3EKA%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Khubaib Amjad",
+  "url": "https://khubaibamjad.github.io/",
+  "image": "https://khubaibamjad.github.io/og-preview.png",
+  "jobTitle": "Backend Software Engineer",
+  "email": "mailto:khubaib.amjad2002@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Lahore",
+    "addressCountry": "PK"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/in/khubaibamjad/",
+    "https://github.com/khubaibamjad",
+    "https://wellfound.com/u/khubaib-amjad"
+  ],
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "University of Central Punjab"
+  },
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Jeeny"
+  },
+  "knowsAbout": [
+    "Java", "Spring Boot", "Spring Security", "Microservices", "REST API Development", "JWT Authentication",
+    "Spring Data JPA", "Hibernate", "PostgreSQL", "MySQL", "MongoDB", "Cassandra", "Redis", "Kafka",
+    "Docker", "Docker Compose", "Selenium", "Playwright", "Rest Assured", "Jenkins CI/CD",
+    "Node.js", "Next.js", "Flutter"
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+  :root{
+    --bg: #FFFFFF;
+    --surface: #FFFFFF;
+    --surface-2: #F0F2F5;
+    --ink: #0F1115;
+    --ink-soft: #454A54;
+    --muted: #767C87;
+    --line: #D7DAE1;
+    --accent: #1F3A5F;
+    --accent-hover: #16294A;
+    --accent-ink: #FFFFFF;
+    --accent-soft: #EAEEF4;
+    --accent-soft-line: #CBD8E6;
+    --shadow: 0 1px 2px rgba(20,22,28,0.05), 0 1px 1px rgba(20,22,28,0.03);
+    --shadow-lift: 0 18px 34px -14px rgba(20,22,28,0.20), 0 4px 10px -4px rgba(20,22,28,0.08);
+    --radius-s: 4px;
+    --radius-m: 10px;
+    --measure: 62ch;
+  }
+
+  *{ box-sizing: border-box; }
+  body{
+    margin:0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+  }
+  @media (prefers-reduced-motion: no-preference){ html{ scroll-behavior: smooth; } }
+  h1,h2,h3{ font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-weight: 600; letter-spacing: -0.01em; text-wrap: balance; margin: 0 0 0.4em; color: var(--ink); }
+  p{ margin: 0 0 1em; color: var(--ink-soft); }
+  a{ color: var(--accent); }
+  .mono{ font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace; font-variant-numeric: tabular-nums; }
+
+  .u-link{ position: relative; text-decoration: none; background-image: linear-gradient(var(--accent), var(--accent)); background-repeat: no-repeat; background-position: 0 100%; background-size: 0% 1.5px; transition: background-size 0.28s ease; }
+  .u-link:hover{ background-size: 100% 1.5px; }
+
+  .eyebrow{
+    font-size: 0.76rem; font-weight: 600; letter-spacing: 0.09em; text-transform: uppercase;
+    color: var(--accent); display: flex; align-items: center; gap: 0.55em; margin-bottom: 1.1rem;
+  }
+  .eyebrow svg{ width: 16px; height: 16px; flex: none; }
+  .eyebrow::after{ content: ""; flex: 1; height: 1px; background: linear-gradient(to right, var(--line), transparent); }
+
+  .shell{ display: grid; grid-template-columns: 224px 1fr; max-width: 1180px; margin: 0 auto; align-items: start; }
+  @media (max-width: 880px){ .shell{ grid-template-columns: 1fr; } }
+
+  .rail{
+    position: sticky; top: 0; height: 100vh; padding: 2.4rem 1.5rem;
+    border-right: 1px solid var(--line); display: flex; flex-direction: column; justify-content: space-between;
+  }
+  @media (max-width: 880px){
+    .rail{ position: static; height: auto; border-right: none; border-bottom: 1px solid var(--line);
+      padding: 1.2rem 1.4rem; flex-direction: row; align-items: center; gap: 1rem; overflow-x: auto; }
+  }
+  .mono-badge{
+    width: 44px; height: 44px; border-radius: var(--radius-s); background: var(--accent);
+    color: #fff; font-family: "IBM Plex Mono", monospace; font-weight: 600; font-size: 0.95rem; letter-spacing: 0.02em;
+    display: flex; align-items: center; justify-content: center;
+  }
+  @media (max-width: 880px){ .mono-badge{ width: 36px; height: 36px; font-size: 0.82rem; } }
+  .rail-id{ font-weight: 600; font-size: 1.02rem; margin-top: 0.9rem; letter-spacing: -0.01em; }
+  @media (max-width: 880px){ .rail-id{ margin-top: 0; white-space: nowrap; } }
+  .rail-role{ font-size: 0.78rem; color: var(--muted); margin-top: 0.3rem; }
+  @media (max-width: 880px){ .rail-role{ display:none; } }
+  .rail-nav{ list-style: none; margin: 1.8rem 0 0; padding: 0; display: flex; flex-direction: column; gap: 0.3rem; }
+  @media (max-width: 880px){ .rail-nav{ flex-direction: row; margin: 0; } }
+  .rail-nav a{
+    display: block; font-size: 0.86rem; color: var(--muted); text-decoration: none;
+    padding: 0.42rem 0.6rem; border-radius: var(--radius-s); white-space: nowrap;
+    box-shadow: inset 2px 0 0 transparent; transition: color 0.16s ease, background 0.16s ease, box-shadow 0.16s ease;
+  }
+  .rail-nav a:hover{ color: var(--accent); background: var(--accent-soft); }
+  .rail-nav a.is-active{ color: var(--accent); background: var(--accent-soft); font-weight: 600; box-shadow: inset 2px 0 0 var(--accent); }
+  @media (max-width: 880px){ .rail-nav a.is-active{ box-shadow: inset 0 -2px 0 var(--accent); } }
+  .rail-foot{ font-size: 0.78rem; color: var(--muted); line-height: 1.5; }
+  @media (max-width: 880px){ .rail-foot{ display: none; } }
+  .rail-foot .status{ color: var(--accent); font-weight: 600; }
+  .rail-resume{ display: block; margin-top: 1rem; font-size: 0.82rem; font-weight: 600; color: var(--accent); text-decoration: none; }
+  @media (max-width: 880px){ .rail-resume{ display: none; } }
+
+  main{ padding: 0 2.4rem; }
+  @media (max-width: 880px){ main{ padding: 0 1.4rem; } }
+  section{ padding: 5.4rem 0; border-bottom: 1px solid var(--line); }
+  section:last-of-type{ border-bottom: none; }
+
+  /* ---- Hero ---- */
+  .hero{
+    padding-top: 3.6rem; display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 2.6rem; align-items: center;
+  }
+  @media (max-width: 820px){ .hero{ grid-template-columns: 1fr; } }
+  .hero-id{ display: flex; align-items: center; gap: 1rem; margin-bottom: 1.3rem; }
+  .hero-photo{ width: 84px; height: 84px; border-radius: 50%; object-fit: cover; border: 1px solid var(--line); background: var(--surface-2); box-shadow: var(--shadow); transition: border-color 0.2s ease, transform 0.2s ease; }
+  .hero-photo:hover{ border-color: var(--accent); transform: scale(1.04); }
+  .hero-id .name{ font-size: 1.3rem; font-weight: 600; letter-spacing: -0.01em; }
+  .hero-id .role{ font-size: 0.86rem; color: var(--muted); margin-top: 0.15em; }
+  .badge{
+    display: inline-flex; align-items: center; gap: 0.5em; font-size: 0.82rem; font-weight: 500;
+    color: var(--ink-soft); background: var(--surface-2); border: 1px solid var(--line);
+    border-radius: var(--radius-s); padding: 0.3em 0.85em 0.3em 0.7em; margin-bottom: 1.1rem;
+  }
+  .badge::before{ content:""; width:7px; height:7px; border-radius:50%; background: var(--accent); }
+  .hero h1{ font-size: clamp(2.1rem, 3.6vw, 2.85rem); font-weight: 700; line-height: 1.12; letter-spacing: -0.015em; max-width: 18ch; }
+  .hero h1 em{ font-style: normal; color: var(--accent); }
+  .hero .lede{ font-size: 1.02rem; max-width: 52ch; margin-top: 0.9rem; }
+  .cta-row{ display: flex; flex-wrap: wrap; align-items: center; gap: 0.7rem; margin-top: 1.5rem; }
+  .btn{
+    font-size: 0.9rem; font-weight: 500; text-decoration: none; padding: 0.68em 1.2em;
+    border-radius: var(--radius-s); border: 1px solid var(--line); color: var(--ink); background: var(--surface);
+    cursor: pointer; display: inline-flex; align-items: center; gap: 0.5em; font-family: inherit;
+  }
+  .btn{ transition: transform 0.2s cubic-bezier(.2,.7,.2,1), box-shadow 0.2s ease, border-color 0.2s ease, background 0.2s ease, color 0.2s ease; }
+  .btn.primary{ background: var(--accent); border-color: var(--accent); color: var(--accent-ink); box-shadow: 0 6px 16px -6px rgba(31,58,95,0.4); }
+  .btn:hover{ border-color: var(--accent); color: var(--accent); background: var(--accent-soft); transform: translateY(-2px); box-shadow: var(--shadow-lift); }
+  .btn.primary:hover{ background: var(--accent-hover); color: var(--accent-ink); box-shadow: 0 12px 26px -8px rgba(31,58,95,0.55); }
+  .btn:active{ transform: translateY(0); }
+  .btn svg{ width: 15px; height: 15px; }
+  .btn:focus-visible, .contact-card:focus-visible, .rail-nav a:focus-visible, .u-link:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; border-radius: var(--radius-s); }
+  .dl-status{ font-size: 0.8rem; color: var(--muted); }
+
+  /* ---- Hero facts card ---- */
+  .hero-facts-wrap{ display: flex; flex-direction: column; gap: 0.9rem; }
+  .hero-facts-label{ font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); padding-left: 0.2rem; }
+
+  /* ---- About ---- */
+  .about-grid{ display: grid; grid-template-columns: 1fr 240px; gap: 3rem; }
+  @media (max-width: 780px){ .about-grid{ grid-template-columns: 1fr; } }
+  .about-grid p{ max-width: var(--measure); }
+  .fact-list{ list-style: none; margin: 0; padding: 1.4rem; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-m); display: flex; flex-direction: column; gap: 1rem; }
+  .fact-list li{ font-size: 0.88rem; }
+  .fact-list .flabel{ font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); display: block; margin-bottom: 0.25em; }
+
+  /* ---- Timeline ---- */
+  .timeline{ display: flex; flex-direction: column; }
+  .tl-item{ display: grid; grid-template-columns: 138px 1fr; gap: 1.6rem; padding: 1.7rem 1rem; margin: 0 -1rem; border-top: 1px solid var(--line); border-radius: var(--radius-m); position: relative; transition: background 0.2s ease; }
+  .tl-item:first-child{ border-top: none; }
+  .tl-item:hover{ background: var(--surface-2); }
+  .tl-item:hover .tl-role{ color: var(--accent); }
+  @media (max-width: 640px){ .tl-item{ grid-template-columns: 1fr; gap: 0.4rem; } }
+  .tl-when{ font-size: 0.84rem; color: var(--muted); padding-top: 0.2em; }
+  .tl-role{ font-size: 1.1rem; font-weight: 600; margin-bottom: 0.15em; display: flex; align-items: center; gap: 0.6em; }
+  .tl-role .lang-dot{ width: 8px; height: 8px; border-radius: 50%; flex: none; background: var(--surface); border: 1.5px solid var(--muted); }
+  .tl-role .lang-dot.is-current{ background: var(--accent); border-color: var(--accent); }
+  .tl-org{ font-size: 0.92rem; color: var(--muted); margin-bottom: 0.7em; }
+  .tl-org .dot{ margin: 0 0.5em; }
+  .tl-item ul{ margin: 0; padding-left: 1.1em; }
+  .tl-item li{ margin-bottom: 0.4em; font-size: 0.95rem; color: var(--ink-soft); }
+  .tl-note{ font-size: 0.9rem; color: var(--muted); }
+
+  /* ---- Skills ---- */
+  .skill-groups{ display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.2rem 2.4rem; }
+  @media (max-width: 780px){ .skill-groups{ grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 520px){ .skill-groups{ grid-template-columns: 1fr; } }
+  .skill-group h3{ font-family: "IBM Plex Mono", monospace; font-size: 0.76rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); font-weight: 600; margin-bottom: 0.9em; padding-bottom: 0.6em; border-bottom: 1px solid var(--line); }
+  .chip-row{ display: flex; flex-wrap: wrap; gap: 0.5em; }
+  .chip{ font-size: 0.86rem; font-weight: 500; border-radius: var(--radius-s); padding: 0.42em 0.85em; background: var(--surface-2); color: var(--ink-soft); border: 1px solid var(--line); transition: background 0.18s ease, border-color 0.18s ease, color 0.18s ease, transform 0.18s ease; }
+  .chip:hover{ background: var(--accent); border-color: var(--accent); color: var(--accent-ink); transform: translateY(-1px); }
+
+  /* ---- Projects ---- */
+  .proj-grid{ display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.4rem; }
+  @media (max-width: 700px){ .proj-grid{ grid-template-columns: 1fr; } }
+  .proj-card{ background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-m); padding: 1.5rem 1.6rem 1.6rem; display: flex; flex-direction: column; transition: border-color 0.22s ease, transform 0.22s cubic-bezier(.2,.7,.2,1), box-shadow 0.22s ease; }
+  .proj-card:hover{ border-color: var(--accent); transform: translateY(-3px); box-shadow: var(--shadow-lift); }
+  .proj-card.flagship{ grid-column: span 2; border-left: 3px solid var(--accent); background: var(--surface-2); }
+  @media (max-width: 700px){ .proj-card.flagship{ grid-column: span 1; } }
+  .proj-top{ display: flex; justify-content: space-between; align-items: start; gap: 1em; margin-bottom: 0.6em; }
+  .proj-card h3{ font-size: 1.08rem; }
+  .tag{ font-size: 0.72rem; font-weight: 600; letter-spacing: 0.02em; padding: 0.3em 0.65em; border-radius: 999px; white-space: nowrap; color: var(--muted); background: var(--surface-2); border: 1px solid var(--line); }
+  .tag.flagship-tag{ color: var(--accent); background: var(--accent-soft); border-color: var(--accent-soft-line); }
+  .proj-card p{ font-size: 0.93rem; margin-bottom: 0.9em; }
+  .proj-card ul{ margin: 0 0 0.9em; padding-left: 1.1em; }
+  .proj-card li{ font-size: 0.92rem; color: var(--ink-soft); margin-bottom: 0.4em; }
+  .proj-card .proj-stack{ margin-top: auto; }
+  .proj-card a.repo-link{ font-size: 0.85rem; text-decoration: none; font-weight: 500; display: inline-flex; align-items: center; }
+  .proj-card a.repo-link::after{ content: "→"; display: inline-block; margin-left: 0.4em; transition: transform 0.2s ease; }
+  .proj-card a.repo-link:hover::after{ transform: translateX(3px); }
+  .neutral-chip{ background: var(--surface-2); color: var(--ink-soft); }
+
+  /* ---- Education ---- */
+  .edu-row{ display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.6em; padding: 1.3rem 0; border-top: 1px solid var(--line); }
+  .edu-row:first-child{ border-top: none; }
+  .edu-row h3{ font-size: 1.08rem; margin: 0; }
+  .edu-when{ font-size: 0.84rem; color: var(--muted); }
+  .edu-detail{ font-size: 0.92rem; color: var(--muted); flex-basis: 100%; }
+
+  /* ---- Contact / footer ---- */
+  .resume-cta{ display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; padding: 1.4rem 1.6rem; background: var(--accent-soft); border: 1px solid var(--accent-soft-line); border-radius: var(--radius-m); margin-bottom: 1.8rem; }
+  .resume-cta p{ margin: 0; color: var(--ink); font-size: 0.94rem; flex: 1; min-width: 200px; }
+  .resume-cta strong{ display:block; font-size: 1.02rem; font-weight: 600; margin-bottom: 0.2em; }
+  .contact-grid{ display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; }
+  .contact-card{ border: 1px solid var(--line); border-radius: var(--radius-m); padding: 1.3rem; background: var(--surface); text-decoration: none; color: var(--ink); display: block; transition: border-color 0.22s ease, transform 0.22s ease, box-shadow 0.22s ease, background 0.22s ease; }
+  .contact-card:hover{ border-color: var(--accent); background: var(--accent-soft); transform: translateY(-3px); box-shadow: var(--shadow-lift); }
+  .contact-card:hover .flabel{ color: var(--accent); }
+  .contact-card .flabel{ font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); display: block; margin-bottom: 0.4em; }
+  .contact-card .cval{ font-size: 0.94rem; font-weight: 600; overflow-wrap: anywhere; word-break: normal; }
+  footer{ padding: 2.4rem 0 3.6rem; font-size: 0.82rem; color: var(--muted); }
+
+  /* ---- Dark mode ---- */
+  :root[data-theme="dark"]{
+    --bg: #14181A;
+    --surface: #1B2023;
+    --surface-2: #21272A;
+    --ink: #EAEFEE;
+    --ink-soft: #BFC8C6;
+    --muted: #7E8B89;
+    --line: #2B3234;
+    --accent: #45C7B8;
+    --accent-hover: #66D6C9;
+    --accent-ink: #0C1211;
+    --accent-soft: #17322F;
+    --accent-soft-line: #2A5750;
+    --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 1px 1px rgba(0,0,0,0.3);
+    --shadow-lift: 0 18px 34px -14px rgba(0,0,0,0.6), 0 4px 10px -4px rgba(0,0,0,0.4);
+  }
+  html, body{ transition: background-color 0.25s ease, color 0.25s ease; }
+
+  /* ---- Floating controls ---- */
+  .float-controls{ position: fixed; right: 1.4rem; bottom: 1.4rem; display: flex; flex-direction: column; gap: 0.6rem; z-index: 40; }
+  .float-btn{
+    width: 42px; height: 42px; border-radius: 50%; border: 1px solid var(--line); background: var(--surface);
+    color: var(--ink-soft); display: flex; align-items: center; justify-content: center; cursor: pointer;
+    box-shadow: var(--shadow); transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease, visibility 0.2s ease;
+  }
+  .float-btn:hover{ border-color: var(--accent); color: var(--accent); transform: translateY(-2px); box-shadow: var(--shadow-lift); }
+  .float-btn:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
+  .float-btn svg{ width: 19px; height: 19px; }
+  .to-top{ opacity: 0; visibility: hidden; transform: translateY(6px); text-decoration: none; }
+
+  .to-top.is-visible{ opacity: 1; visibility: visible; transform: translateY(0); }
+
+  /* ---- Theme toggle (fixed, top right) ---- */
+  .theme-toggle-fixed{
+    position: fixed; top: 1.4rem; right: 1.4rem; z-index: 60;
+    display: flex; align-items: center; gap: 0.55em; padding: 0.5em 0.9em;
+    border: 1px solid var(--line); border-radius: 999px; background: var(--surface);
+    color: var(--ink-soft); font-size: 0.82rem; font-weight: 500; font-family: inherit; cursor: pointer;
+    box-shadow: var(--shadow);
+    transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .theme-toggle-fixed:hover{ border-color: var(--accent); color: var(--accent); background: var(--accent-soft); transform: translateY(-2px); box-shadow: var(--shadow-lift); }
+  .theme-toggle-fixed:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
+  .theme-toggle-fixed svg{ width: 15px; height: 15px; flex: none; }
+  .theme-toggle-fixed .icon-moon{ display: none; }
+  :root[data-theme="dark"] .theme-toggle-fixed .icon-sun{ display: none; }
+  :root[data-theme="dark"] .theme-toggle-fixed .icon-moon{ display: block; }
+  @media (max-width: 620px){
+    .theme-toggle-fixed{ padding: 0.6em; top: 1rem; right: 1rem; }
+    .theme-toggle-fixed span{ display: none; }
+  }
+  @media (max-width: 480px){ .float-controls{ right: 1rem; bottom: 1rem; } .float-btn{ width: 38px; height: 38px; } }
+
+  /* ---- Scroll progress ---- */
+  .scroll-progress{ position: fixed; top: 0; left: 0; height: 3px; width: 0%; background: var(--accent); z-index: 50; }
+
+  /* ---- Copy button (email) ---- */
+  .contact-card{ position: relative; }
+  .copy-btn{
+    position: absolute; top: 1rem; right: 1rem; font-size: 0.7rem; font-weight: 600; font-family: inherit;
+    color: var(--muted); background: var(--surface-2); border: 1px solid var(--line); border-radius: var(--radius-s);
+    padding: 0.3em 0.65em; cursor: pointer; transition: color 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+  }
+  .copy-btn:hover{ color: var(--accent); border-color: var(--accent); background: var(--accent-soft); }
+  .copy-btn:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
+  @media (max-width: 420px){ .copy-btn{ position: static; margin-top: 0.6em; display: inline-block; } }
+</style>
+
+
+</head>
+<body>
+<div class="scroll-progress" id="scrollProgress"></div>
+<button type="button" class="theme-toggle-fixed" id="themeToggle" aria-label="Toggle dark mode" aria-pressed="false">
+  <svg class="icon-sun" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="10" cy="10" r="3.5"/><path d="M10 2v2M10 16v2M2 10h2M16 10h2M4.2 4.2l1.4 1.4M14.4 14.4l1.4 1.4M4.2 15.8l1.4-1.4M14.4 5.6l1.4-1.4"/></svg>
+  <svg class="icon-moon" viewBox="0 0 20 20" fill="currentColor"><path d="M16.5 12.3A7 7 0 0 1 7.7 3.5a7 7 0 1 0 8.8 8.8z"/></svg>
+  <span id="themeToggleLabel">Dark mode</span>
+</button>
+<div class="float-controls">
+  <a href="#top" class="float-btn to-top" id="toTop" aria-label="Back to top">
+    <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 15V5M5 9l5-5 5 5"/></svg>
+  </a>
+</div>
+<div class="shell">
+  <nav class="rail" aria-label="Section navigation">
+    <div>
+      <div class="mono-badge">KA</div>
+      <div class="rail-id">Khubaib Amjad</div>
+      <div class="rail-role">Backend Developer (Java / Spring Boot)</div>
+      <ul class="rail-nav" id="railNav">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a class="rail-resume u-link" href="Khubaib_Amjad_Resume.pdf" download>↓ Resume (PDF)</a>
+    </div>
+    <div class="rail-foot">
+      Lahore, Pakistan<br>
+      <span class="status">Open to work</span>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" id="top">
+      <div>
+        <div class="hero-id">
+          <img class="hero-photo" alt="Khubaib Amjad" src="data:image/jpeg;base64,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" alt="Khubaib Amjad">
+          <div>
+            <div class="name">Khubaib Amjad</div>
+            <div class="role">Software Engineer in Test @ Jeeny</div>
+          </div>
+        </div>
+        <span class="badge">Open to remote, hybrid &amp; on-site roles</span>
+        <h1>Backend Software Engineer, <em>Java &amp; Spring Boot.</em></h1>
+        <p class="lede">I design and build REST APIs, JWT-secured services, and relational data models in Java and Spring Boot — with a QA engineering background that makes reliability and thorough testing second nature, not an afterthought.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="Khubaib_Amjad_Resume.pdf" download>
+            <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 2v9m0 0 3.5-3.5M9 11 5.5 7.5"/><path d="M3 13v1.5A1.5 1.5 0 0 0 4.5 16h9a1.5 1.5 0 0 0 1.5-1.5V13"/></svg>
+            Download Résumé
+          </a>
+          <a class="btn" href="mailto:khubaib.amjad2002@gmail.com">Email</a>
+          <a class="btn" href="https://www.linkedin.com/in/khubaibamjad/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="https://github.com/khubaibamjad" target="_blank" rel="noopener">GitHub</a>
+        </div>
+              </div>
+      <div class="hero-facts-wrap">
+        <span class="hero-facts-label">At a glance</span>
+        <ul class="fact-list">
+          <li><span class="flabel">Current role</span>SDET Engineer, Jeeny</li>
+          <li><span class="flabel">Backend focus</span>Java, Spring Boot, JWT, REST APIs</li>
+          <li><span class="flabel">Flagship project</span>E-Commerce REST API</li>
+          <li><span class="flabel">Location</span>Lahore, Pakistan · Remote-friendly</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2 class="eyebrow"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="6" r="3"/><path d="M3 15c0-3 2.5-5 6-5s6 2 6 5"/></svg>About</h2>
+      <div class="about-grid">
+        <div>
+          <p>I'm a backend-focused software engineer who builds REST APIs, JWT-secured services, and relational data models in Java and Spring Boot. At Jeeny, I build API test suites in Java with Rest Assured, wire them into Jenkins CI/CD to catch regressions before release, and restructured our manual test process into a documented, repeatable regression cycle now used every release.</p>
+          <p>Earlier, at TEXAXIS, I built internal business software in Java and Spring Boot — including a full accounting application — working across REST endpoints, data models, and relational database design, alongside a company website deployed with GitHub Pages CI/CD.</p>
+          <p>My E-Commerce REST API project brought this together end to end: 18 REST endpoints across four controllers on a layered controller–service–repository architecture, stateless JWT authentication with a custom Spring Security filter chain, Spring Data JPA/Hibernate models with transactional order persistence, and a Dockerized MySQL deployment verified with Postman and Rest Assured.</p>
+          <p>I also work across Node.js, Next.js, and Express for full-stack projects, and built a Flutter-based mobile trading app as my final year project. I'm looking for backend or full-stack software engineer roles where I can keep building well-tested, production-grade systems.</p>
+        </div>
+        <ul class="fact-list">
+          <li><span class="flabel">Based in</span>Lahore, Punjab, Pakistan</li>
+          <li><span class="flabel">Currently</span>SDET Engineer, Jeeny</li>
+          <li><span class="flabel">Targeting</span>Backend Software Engineer</li>
+          <li><span class="flabel">Also open to</span>Full-Stack roles</li>
+          <li><span class="flabel">Education</span>B.S. Software Engineering</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2 class="eyebrow"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="6" width="14" height="9" rx="1.5"/><path d="M6 6V4.5C6 3.7 6.7 3 7.5 3h3c.8 0 1.5.7 1.5 1.5V6"/></svg>Experience</h2>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-when mono">Mar 2026 — Present</div>
+          <div>
+            <div class="tl-role"><span class="lang-dot is-current"></span>SDET Engineer</div>
+            <div class="tl-org">Jeeny <span class="dot">·</span> Full-time <span class="dot">·</span> Lahore, PK</div>
+            <ul>
+              <li>Contribute to backend development of the Earnings Dashboard, working across Java microservices with Kafka, Redis, Cassandra, MongoDB, and PostgreSQL.</li>
+              <li>Build and maintain Java-based API test suites and unit tests with Rest Assured, integrated into Jenkins CI/CD, covering 30+ endpoints per sprint.</li>
+              <li>Automate mobile application testing with Appium, UiAutomator2, and Java-based Selenium, surfacing 8+ major UI/functional defects per release before production.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-when mono">Oct 2025 — Mar 2026</div>
+          <div>
+            <div class="tl-role"><span class="lang-dot"></span>Software Engineer</div>
+            <div class="tl-org">Vertex <span class="dot">·</span> Contract</div>
+            <ul>
+              <li>Developed the Java/Spring Boot backend for Vstellar, an in-house test-automation product.</li>
+              <li>Integrated Playwright and Java Selenium libraries into Vstellar, driving automated UI test execution and cutting manual test setup time by roughly 35%.</li>
+              <li>Wrote unit tests for the Vstellar backend and collaborated with the DevOps team on build and deployment processes.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-when mono">Aug 2024 — Oct 2025</div>
+          <div>
+            <div class="tl-role"><span class="lang-dot"></span>Software Developer</div>
+            <div class="tl-org">TEXAXIS (SMC-Private) Limited <span class="dot">·</span> Full-time <span class="dot">·</span> Lahore–Karachi, PK</div>
+            <ul>
+              <li>Built internal finance and accounting software in Java and Spring Boot, including REST endpoints, data models, and relational schema, used by 50+ daily users.</li>
+              <li>Developed the company website in HTML, CSS, and JavaScript, and configured GitHub Pages CI/CD with linting rules for 20+ error-free deployments.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2 class="eyebrow"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 4 2 9l4 5M12 4l4 5-4 5"/></svg>Skills</h2>
+      <div class="skill-groups">
+        <div class="skill-group">
+          <h3>Languages</h3>
+          <div class="chip-row">
+            <span class="chip">Java</span><span class="chip">Python</span><span class="chip">C++</span><span class="chip">JavaScript</span><span class="chip">SQL</span><span class="chip">HTML5</span><span class="chip">CSS3</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Backend &amp; APIs</h3>
+          <div class="chip-row">
+            <span class="chip">Spring Boot</span><span class="chip">Spring Security</span><span class="chip">Microservices</span><span class="chip">JWT Authentication</span><span class="chip">Spring Data JPA / Hibernate</span><span class="chip">REST API Development</span><span class="chip">Maven</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Databases &amp; Messaging</h3>
+          <div class="chip-row">
+            <span class="chip">PostgreSQL</span><span class="chip">MySQL</span><span class="chip">MongoDB</span><span class="chip">Cassandra</span><span class="chip">Redis</span><span class="chip">Kafka</span><span class="chip">SQL</span><span class="chip">H2</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Full-Stack</h3>
+          <div class="chip-row">
+            <span class="chip">Node.js</span><span class="chip">Next.js</span><span class="chip">Express</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Mobile</h3>
+          <div class="chip-row">
+            <span class="chip">Flutter</span><span class="chip">Dart</span><span class="chip">Firebase</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Testing &amp; QA</h3>
+          <div class="chip-row">
+            <span class="chip">Rest Assured</span><span class="chip">Postman</span><span class="chip">Selenium</span><span class="chip">Playwright</span><span class="chip">Appium</span><span class="chip">UiAutomator2</span><span class="chip">JMeter</span><span class="chip">TestNG</span><span class="chip">SDLC / STLC</span><span class="chip">Agile</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>DevOps &amp; Tools</h3>
+          <div class="chip-row">
+            <span class="chip">Docker</span><span class="chip">Docker Compose</span><span class="chip">Jenkins (CI/CD)</span><span class="chip">Git</span><span class="chip">GitHub</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 class="eyebrow"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 5.5c0-.6.4-1 1-1h4l1.5 2H15c.6 0 1 .4 1 1v6c0 .6-.4 1-1 1H3c-.6 0-1-.4-1-1v-8z"/></svg>Projects</h2>
+      <div class="proj-grid">
+        <div class="proj-card flagship">
+          <div class="proj-top">
+            <h3>E-Commerce REST API</h3>
+            <span class="tag flagship-tag">Flagship Project</span>
+          </div>
+          <p>A full backend service built to production patterns: layered controller–service–repository architecture across four controllers — authentication, products, categories, orders.</p>
+          <ul>
+            <li>18 REST endpoints covering full CRUD, keyword search, and category filtering, with 9 DTOs and Jakarta Bean Validation.</li>
+            <li>Stateless JWT authentication (BCrypt hashing, custom Spring Security filter chain); only register and login are public, and per-user ownership ensures users can only read and cancel their own orders.</li>
+            <li>Users, Products, Categories, Orders, and OrderItems modeled in Spring Data JPA/Hibernate so orders persist with their line items in a single transaction; centralized error handling via <code class="mono">@ControllerAdvice</code>.</li>
+            <li>Migrated persistence from H2 to MySQL, containerized app and database with Docker Compose for one-command deployment, and verified every endpoint with Postman and Rest Assured.</li>
+          </ul>
+          <div class="proj-stack chip-row">
+            <span class="chip neutral-chip">Java</span><span class="chip neutral-chip">Spring Boot</span><span class="chip neutral-chip">Spring Security</span><span class="chip neutral-chip">Spring Data JPA</span><span class="chip neutral-chip">MySQL</span><span class="chip neutral-chip">Docker Compose</span>
+          </div>
+        </div>
+        <div class="proj-card">
+          <div class="proj-top">
+            <h3>Distributed Rate Limiter</h3>
+            <span class="tag">Spring Boot Service</span>
+          </div>
+          <p>A Redis-backed token-bucket rate limiter built as a standalone service, so limits hold correctly across multiple load-balanced instances.</p>
+          <ul>
+            <li>Eliminated the check-then-act race by running refill-check-deduct as one atomic Lua script via Redis EVALSHA, with per-client buckets and a 1-hour idle TTL.</li>
+            <li>Externalized rate limits through Spring Boot <code class="mono">@ConfigurationProperties</code> for configuration without code changes.</li>
+          </ul>
+          <div class="proj-stack chip-row">
+            <span class="chip neutral-chip">Java 21</span><span class="chip neutral-chip">Spring Boot 3</span><span class="chip neutral-chip">Redis</span><span class="chip neutral-chip">Lua</span>
+          </div>
+          <p style="margin-top:1em"><a class="repo-link u-link" href="https://github.com/khubaibamjad" target="_blank" rel="noopener">github.com/khubaibamjad</a></p>
+        </div>
+        <div class="proj-card">
+          <div class="proj-top">
+            <h3>Mobile Trading Application</h3>
+            <span class="tag">Final Year Project</span>
+          </div>
+          <p>A mobile trading application built in Flutter/Dart, integrating the CoinGecko API for live charts and Firebase for authentication and data storage.</p>
+          <div class="proj-stack chip-row">
+            <span class="chip neutral-chip">Flutter</span><span class="chip neutral-chip">Dart</span><span class="chip neutral-chip">Firebase</span><span class="chip neutral-chip">CoinGecko API</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2 class="eyebrow"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 6.5 9 3l8 3.5-8 3.5-8-3.5z"/><path d="M4.5 8.2V12c0 1 2 2 4.5 2s4.5-1 4.5-2V8.2"/></svg>Education</h2>
+      <div class="edu-row">
+        <h3>Bachelor of Software Engineering</h3>
+        <span class="edu-when">Oct 2021 — Jul 2025</span>
+        <div class="edu-detail">University of Central Punjab, Lahore · Major: Programming &amp; Development · Minor: Business · CGPA: 3.09</div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 class="eyebrow"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="14" height="10" rx="1.5"/><path d="M2.5 5 9 10l6.5-5"/></svg>Contact</h2>
+      <h2>Let's talk</h2>
+      <div class="resume-cta">
+        <p><strong>Full résumé, one page.</strong>Work history, the E-Commerce REST API breakdown, and education — as a PDF.</p>
+        <a class="btn primary" href="Khubaib_Amjad_Resume.pdf" download>
+          <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 2v9m0 0 3.5-3.5M9 11 5.5 7.5"/><path d="M3 13v1.5A1.5 1.5 0 0 0 4.5 16h9a1.5 1.5 0 0 0 1.5-1.5V13"/></svg>
+          Download Résumé
+        </a>
+      </div>
+      <p style="max-width:var(--measure)">Open to backend and full-stack software engineer roles — remote, hybrid, or on-site.</p>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <span class="flabel">Email</span>
+          <a class="cval u-link" href="mailto:khubaib.amjad2002@gmail.com">khubaib.amjad2002@gmail.com</a>
+          <button type="button" class="copy-btn" aria-label="Copy email address" onclick="copyEmail(this)">Copy</button>
+        </div>
+        <a class="contact-card" href="tel:+923332220523">
+          <span class="flabel">Phone</span>
+          <span class="cval">+92 333 2220523</span>
+        </a>
+        <a class="contact-card" href="https://www.linkedin.com/in/khubaibamjad/" target="_blank" rel="noopener">
+          <span class="flabel">LinkedIn</span>
+          <span class="cval">in/khubaibamjad</span>
+        </a>
+        <a class="contact-card" href="https://github.com/khubaibamjad" target="_blank" rel="noopener">
+          <span class="flabel">GitHub</span>
+          <span class="cval">khubaibamjad</span>
+        </a>
+        <a class="contact-card" href="https://wellfound.com/u/khubaib-amjad" target="_blank" rel="noopener">
+          <span class="flabel">Wellfound</span>
+          <span class="cval">khubaib-amjad</span>
+        </a>
+      </div>
+    </section>
+
+    <footer>© 2026 Khubaib Amjad · Lahore, Pakistan</footer>
+  </main>
+</div>
+
+<script>
+  (function(){
+    var links = Array.prototype.slice.call(document.querySelectorAll('.rail-nav a'));
+    var sections = links.map(function(a){ return document.querySelector(a.getAttribute('href')); }).filter(Boolean);
+    if(!('IntersectionObserver' in window) || !sections.length) return;
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){
+          var id = '#' + entry.target.id;
+          links.forEach(function(a){
+            a.classList.toggle('is-active', a.getAttribute('href') === id);
+          });
+        }
+      });
+    }, { rootMargin: '-40% 0px -55% 0px' });
+    sections.forEach(function(s){ io.observe(s); });
+  })();
+
+  // Theme toggle (persists via localStorage, falls back to system preference)
+  (function(){
+    var root = document.documentElement;
+    var btn = document.getElementById('themeToggle');
+    var themeMeta = document.getElementById('themeColorMeta');
+    var label = document.getElementById('themeToggleLabel');
+    function applyTheme(theme){
+      if(theme === 'dark'){ root.setAttribute('data-theme','dark'); }
+      else{ root.removeAttribute('data-theme'); }
+      if(btn) btn.setAttribute('aria-pressed', theme === 'dark' ? 'true' : 'false');
+      if(themeMeta) themeMeta.setAttribute('content', theme === 'dark' ? '#0B0E14' : '#FFFFFF');
+      if(label) label.textContent = theme === 'dark' ? 'Light mode' : 'Dark mode';
+    }
+    var stored = null;
+    try{ stored = localStorage.getItem('theme'); }catch(e){}
+    var initial = stored || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    applyTheme(initial);
+    if(btn){
+      btn.addEventListener('click', function(){
+        var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        applyTheme(next);
+        try{ localStorage.setItem('theme', next); }catch(e){}
+      });
+    }
+  })();
+
+  // Scroll progress bar + back-to-top visibility
+  (function(){
+    var bar = document.getElementById('scrollProgress');
+    var toTop = document.getElementById('toTop');
+    var ticking = false;
+    function update(){
+      var doc = document.documentElement;
+      var scrollTop = doc.scrollTop || document.body.scrollTop;
+      var height = doc.scrollHeight - doc.clientHeight;
+      var pct = height > 0 ? (scrollTop / height) * 100 : 0;
+      if(bar) bar.style.width = pct + '%';
+      if(toTop) toTop.classList.toggle('is-visible', scrollTop > 600);
+      ticking = false;
+    }
+    document.addEventListener('scroll', function(){
+      if(!ticking){ window.requestAnimationFrame(update); ticking = true; }
+    }, { passive: true });
+    update();
+  })();
+
+  // Copy email address to clipboard
+  function copyEmail(btn){
+    var email = 'khubaib.amjad2002@gmail.com';
+    var original = btn.textContent;
+    function done(ok){
+      btn.textContent = ok ? 'Copied!' : 'Copy failed';
+      setTimeout(function(){ btn.textContent = original; }, 1600);
+    }
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(email).then(function(){ done(true); }, function(){ done(false); });
+    } else {
+      try{
+        var ta = document.createElement('textarea');
+        ta.value = email; ta.style.position = 'fixed'; ta.style.opacity = '0';
+        document.body.appendChild(ta); ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+        done(true);
+      }catch(e){ done(false); }
+    }
+  }
+</script>
+
+</body>
+</html>
